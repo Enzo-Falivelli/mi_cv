@@ -1,0 +1,157 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+      
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100vw;
+        display: inline-flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+
+    #experience-link {
+        text-decoration: none; /* Elimina el subrayado */
+        color: #FFF;
+    }
+
+    #skills-link {
+        text-decoration: none; /* Elimina el subrayado */
+        color: #FFF;
+    }
+
+    #softwares-link {
+        text-decoration: none; /* Elimina el subrayado */
+        color: #FFF;
+    }
+
+    #education-link {
+        text-decoration: none; /* Elimina el subrayado */
+        color: #FFF;
+    }
+
+.image-container {
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.perfil {
+    
+    border-radius: 800px;
+    width: 250px; 
+    height: 250px; 
+    background-color: black; 
+    padding: 1px; 
+    margin-top: 55px;
+}
+
+#centered-image {
+    max-width: 100%;
+    margin-left: 0; /* Asegura que la imagen no tenga margen izquierdo al principio */
+    transition: margin-left 0.5s ease; /* Agrega una transición para el movimiento */
+}
+
+.hidden {
+    display: none;
+        }
+
+#experience-list {
+    color: #FFF;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left; /* Alinea el texto al margen derecho */
+    transition: all 0.9s ease;
+    margin-top: -120px;    
+    
+}
+
+#skills-list {
+    color: #FFF;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.9s ease;
+    margin-top: -120px;   
+}
+
+#softwares-list {
+    color: #FFF;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.9s ease;
+    margin-top: -120px;   
+}
+
+#education-list {
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    transition: all 0.9s ease;
+    margin-top: -120px;   
+}
+
+
+/* Estilos del contenedor de video */
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Coloca el video detrás de otros elementos */
+    filter: brightness(70%); /* Ajusta el valor para hacerlo más oscuro (por ejemplo, 70%) */
+}
+
+/* Estilos del video de fondo */
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir todo el contenedor */
+}
+
+
+
+#experience-list li {
+    list-style: none; /* Elimina los bullets de la lista */
+  text-align: left; /* Alinea el texto al margen derecho */
+  }
+
+  #education-list li {
+    list-style: none; /* Elimina los bullets de la lista */
+  text-align: left; /* Alinea el texto al margen derecho */
+  }
+
+  #skills-list li {
+    list-style: none; /* Elimina los bullets de la lista */
+  text-align: left; /* Alinea el texto al margen derecho */
+  }
+
+  #softwares-list li {
+    list-style: none; /* Elimina los bullets de la lista */
+  text-align: left; /* Alinea el texto al margen derecho */
+  }
+
+  a{
+    color: #FFF;
+  }
+
