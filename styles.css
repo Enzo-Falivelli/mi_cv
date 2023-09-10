@@ -10,15 +10,21 @@ body {
 
 .navbar {
       
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        width: 100vw;
-        display: inline-flex;
-        justify-content: space-evenly;
-        margin-top: 10px;
-    }
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-evenly;
+    background-color: #0d1632;
+    border-top: #0d1632;
+}
+nav {
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
 
     #experience-link {
         text-decoration: none; /* Elimina el subrayado */
@@ -91,7 +97,7 @@ body {
     color: #FFF;
     position: absolute;
     top: 60%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     transition: all 0.9s ease;
@@ -119,7 +125,7 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: -1; /* Coloca el video detrás de otros elementos */
-    filter: brightness(70%); /* Ajusta el valor para hacerlo más oscuro (por ejemplo, 70%) */
+    filter: brightness(50%); /* Ajusta el valor para hacerlo más oscuro (por ejemplo, 70%) */
 }
 
 /* Estilos del video de fondo */
