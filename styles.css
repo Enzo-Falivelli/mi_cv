@@ -23,28 +23,16 @@ body {
 nav {
 margin-top: 10px;
 margin-bottom: 10px;
-
 }
 
-    #experience-link {
-        text-decoration: none; /* Elimina el subrayado */
-        color: #FFF;
-    }
+.link{
+    text-decoration: none; /* Elimina el subrayado */
+    color: #FFF;
+}
 
-    #skills-link {
-        text-decoration: none; /* Elimina el subrayado */
-        color: #FFF;
-    }
-
-    #softwares-link {
-        text-decoration: none; /* Elimina el subrayado */
-        color: #FFF;
-    }
-
-    #education-link {
-        text-decoration: none; /* Elimina el subrayado */
-        color: #FFF;
-    }
+.link:hover{
+    font-weight: 560;
+}
 
 .image-container {
     text-align: center;
