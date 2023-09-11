@@ -113,7 +113,7 @@ margin-bottom: 10px;
     height: 100%;
     overflow: hidden;
     z-index: -1; /* Coloca el video detrás de otros elementos */
-    filter: brightness(50%); /* Ajusta el valor para hacerlo más oscuro (por ejemplo, 70%) */
+    filter: brightness(65%); /* Ajusta el valor para hacerlo más oscuro (por ejemplo, 70%) */
 }
 
 /* Estilos del video de fondo */
