@@ -5,11 +5,6 @@
         hideList(centeredLists);
     }
 
-    function ocultarHola() {
-        var parrafo = document.getElementById("hola");
-        parrafo.style.display = "none";
-    }
-
     function hideList(list){
         for(let i=0; i < list.length; i++){
             if(!list[i].classList.contains('hidden'))
@@ -91,7 +86,6 @@
         {
         // Mueve la imagen al margen izquierdo
         centeredImage.style.marginLeft = '-70%';
-        imageContainer.hideList;
         }
         // Muestra la lista centrada
         centeredList.classList.remove('hidden');
