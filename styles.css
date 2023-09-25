@@ -1,14 +1,17 @@
 /* styles.css */
-body {
+    
+body 
+    {
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: Arial, sans-serif;
-}
+    }
 
-.navbar { 
+.navbar 
+    { 
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -18,53 +21,57 @@ body {
     justify-content: space-evenly;
     background-color: #0d1632;
     border-top: #0d1632;
-    flex-wrap: wrap; /* Se supone que esto pone los contenedor uno debajo del otro */ 
-}
+    }
 
-nav {
-margin-top: 10px;
-margin-bottom: 10px;
-}
+nav /*Estilo de Navs del header*/
+    {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
 
-.link{
+.link /*Estilo de Navs del header*/
+    {
     text-decoration: none; /* Elimina el subrayado */
     color: #FFF;
-}
+    }
 
-.link:hover{
+.link:hover
+    {
     font-weight: 560;
-}
+    }
 
-.image-container {
+.image-container 
+    {
     text-align: center;
     transition: all 0.5s ease;
-}
-.perfil {
-    
+    }
+
+.perfil /*Estilo de la imagen*/
+    {    
     border-radius: 800px;
     width: 250px; 
     height: 250px; 
     background-color: black; 
     padding: 1px; 
     margin-top: 55px;
-}
+    }
 
-#centered-image {
+#centered-image { /*Estilo de la imagen*/
     max-width: 100%;
     margin-left: 0; /* Asegura que la imagen no tenga margen izquierdo al principio */
     transition: margin-left 0.5s ease; /* Agrega una transición para el movimiento */
 }
 
-.hidden {
+.hidden { /*Estilo para la clase hidden que tienen aplicadas las listas al principio*/
     display: none;
         }
 
-#experience-list {
+#experience-list { 
     color: #FFF;
     position: absolute;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: left; /* Alinea el texto al margen derecho */
     transition: all 0.9s ease;
     margin-top: -120px;    
@@ -76,9 +83,9 @@ margin-bottom: 10px;
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*Animación de lista*/
     text-align: center;
-    transition: all 0.9s ease;
+    transition: all 0.9s ease; /*Animación para lista*/
     margin-top: -120px;   
 }
 
@@ -87,9 +94,9 @@ margin-bottom: 10px;
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: center;
-    transition: all 0.9s ease;
+    transition: all 0.9s ease; /*Animación para lista*/
     margin-top: -120px;   
 }
 
@@ -98,23 +105,23 @@ margin-bottom: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: left;
-    transition: all 0.9s ease;
+    transition: all 0.9s ease; /*Animación para lista*/
     margin-top: -120px;   
 }
 
 
 /* Estilos del contenedor de video */
-#video-container {
-    position: fixed;
+#video-container { 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; 
     z-index: -1; /* Coloca el video detrás de otros elementos */
-    filter: brightness(65%); /* Ajusta el valor para hacerlo más oscuro (por ejemplo, 70%) */
+    filter: brightness(60%); /* Ajusta el valor para hacerlo más oscuro */
 }
 
 /* Estilos del video de fondo */
@@ -147,156 +154,166 @@ margin-bottom: 10px;
   text-align: left; /* Alinea el texto al margen derecho */
   }
 
-  a{
-    color: #FFF;
-  }
-
-input {
-    display: none;
-}
-
-label {
-    display: none;
-}
-
-.mobile-link {
-    display: none;
-}
-
-#enzo-link {
-    display: none;
-}
-
-.titulo {
-    display: none;
-}
-
-#boton-home {
-    display: none;
-}
-
-#nombre {
-    display: none;
-}
-
-@media all and  (max-width: 600px)
+  a
     {
-
-    #nombre{
-        display: block;
-        color: #FFF;
-        margin-top: -58px;
-        margin-left: 50px;
-        font-size: 25px;
-        font-variant: all-small-caps;
-              }
-
-        #boton-home {
-            display: block;
-        }
-
-        #link-home
-        {
-            background-color: #0d1632;
-            text-decoration: none;
-            padding: 10px 20px;
-            color: #fff;
-            text-decoration: none;
-            border: 1px solid cadetblue;
-            border-radius: 5px;
-        }
-
-        #boton-home
-        {
-            margin-top: 35px;
-        }
-
-        #experience-list 
-        { 
-            margin-top: -90px;
-            width: 100%;
-            margin-left: -5%;
-            margin-bottom: 5%;
-            list-style: none; /* Elimina los bullets de la lista */
-            text-align: left; /* Alinea el texto al margen derecho */
-            font-size: 13px;
-
-        }
-
-        #softwares-list
-        { 
-            margin-top: -110px;
-            width: 100%;
-            margin-left: -5%;
-            margin-bottom: 5%;
-            list-style: circle;
-            text-align: left;
-            font-size: 14px;
-
-        }
-
-        #skills-list .titulo {
-            display: block;
-            font-size: 26px;
-        }
-        #experience-list .titulo {
-            display: block;
-            font-size: 26px;
-        }
-
-        #softwares-list .titulo {
-            display: block;
-            font-size: 26px;
-        }
-
-        #education-list .titulo {
-            display: block;
-            font-size: 26px;
-        }
-
-        #skills-list 
-        { 
-            margin-top: -90px;
-            width: 100%;
-            margin-bottom: 5%;
-            list-style: none;
-            margin-left: -5%;
-            font-size: 12.8px;
-            text-align: left;
-        }
-
-        #education-list 
-        { 
-            margin-top: -90px;
-            width: 100%;
-            margin-bottom: 5%;
-            list-style: none;
-            margin-left: -5%;
-            font-size: 13px;
-            text-align: left;
-        }
-
-    input:checked ~ nav {
-    display: block;
+    color: #FFF;
     }
 
-    input:checked ~ label 
+input 
+    {
+    display: none;
+    }
+
+label
+    {
+    display: none;
+    }
+
+.mobile-link 
+    {
+    display: none;
+    }
+
+#enzo-link 
+    {
+    display: none;
+    }
+
+.titulo 
+    {
+    display: none;
+    }
+
+#boton-home 
+    {
+    display: none;
+    }
+
+#nombre 
+    {
+    display: none;
+    }
+
+/*Versión Mobile*/
+@media all and  (max-width: 600px)
+    {   
+    #nombre /*Estilo para el texto a la derecha del menu hamburguesa*/
+    {
+    display: block;
+    color: #FFF;
+    margin-top: -58px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-variant: all-small-caps;
+    }
+
+    a 
+    {
+    text-decoration: none;
+    }
+    #boton-home /*href que se muestra como boton que redirige al usuario al home*/
+        {
+        display: block;
+        margin-top: 35px;
+        }
+
+    #link-home /*Diseño del href para que se vea como boton*/
+        {
+        background-color: #0d1632;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid cadetblue;
+        border-radius: 5px;
+        }
+
+    #experience-list 
+        { 
+        margin-top: -90px;
+        width: 100%;
+        margin-left: -5%;
+        margin-bottom: 5%;
+        list-style: none; /* Elimina los bullets de la lista */
+        text-align: left; /* Alinea el texto al margen derecho */
+        font-size: 13px;
+        }
+
+    #softwares-list
+        { 
+        margin-top: -110px;
+        width: 100%;
+        margin-left: -5%;
+        margin-bottom: 5%;
+        list-style: circle;
+        text-align: left;
+        font-size: 14px;
+            }
+
+    #skills-list 
+        { 
+        margin-top: -90px;
+        width: 100%;
+        margin-bottom: 5%;
+        list-style: none;
+        margin-left: -5%;
+        font-size: 12.8px;
+        text-align: left;
+        }
+
+    #education-list 
+        { 
+        margin-top: -90px;
+        width: 100%;
+        margin-bottom: 5%;
+        list-style: none;
+        margin-left: -5%;
+        font-size: 13px;
+        text-align: left;
+        }
+
+    #skills-list .titulo /*Titulo de lista*/
+    {
+        display: block;
+        font-size: 26px;
+    }
+    #experience-list .titulo /*Titulo de lista*/
+    {
+        display: block;
+        font-size: 26px;
+    }
+
+    #softwares-list .titulo /*Titulo de lista*/
+    {
+        display: block;
+        font-size: 26px;
+    }
+
+    #education-list .titulo /*Titulo de lista*/
+    {
+        display: block;
+        font-size: 26px;
+    }
+
+    input:checked ~ nav /*Desplegar el menu a la hora de hacer clic en el menú hamburguesa*/
+    {
+        display: block;
+    }
+
+    input:checked ~ label /*Cambiar estado del menú al hacer clic*/
     {
         background: lightblue;
-        
     }
 
-    
-
-    nav { 
+    nav 
+    { 
         text-align: center;       
         margin: 0px;
         display: none;
         padding-bottom: 5.5%;
-
     }
 
-    .navbar
+    .navbar /*Diseño del menú desplegable*/
     { 
         background-color: #0d1632;
         border-top: #0d1632;
@@ -306,11 +323,10 @@ label {
         justify-content: center;
         margin-bottom: 0.5%;
         margin-top: 0.5%;
-
-        ;
     }
 
-label {
+    label /*Diseño del menú hamburguesa*/
+        {
         margin-top: 2%;
         margin-bottom: 2%;
         margin-left: 2%;
@@ -326,9 +342,4 @@ label {
         user-select: none;
         background-color: cadetblue;
         }
-
-#experience-list li {
-    list-style: none; /* Elimina los bullets de la lista */
-  text-align: left; /* Alinea el texto al margen derecho */
-  }
     }
