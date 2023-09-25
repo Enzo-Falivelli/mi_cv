@@ -8,8 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-      
+.navbar { 
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -19,7 +18,9 @@ body {
     justify-content: space-evenly;
     background-color: #0d1632;
     border-top: #0d1632;
+    flex-wrap: wrap; /* Se supone que esto pone los contenedor uno debajo del otro */ 
 }
+
 nav {
 margin-top: 10px;
 margin-bottom: 10px;
@@ -125,10 +126,11 @@ margin-bottom: 10px;
 
 
 
-#experience-list li {
-    list-style: none; /* Elimina los bullets de la lista */
+#experience-list li 
+{
+  list-style: none; /* Elimina los bullets de la lista */
   text-align: left; /* Alinea el texto al margen derecho */
-  }
+}
 
   #education-list li {
     list-style: none; /* Elimina los bullets de la lista */
@@ -149,3 +151,170 @@ margin-bottom: 10px;
     color: #FFF;
   }
 
+input {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+.mobile-link {
+    display: none;
+}
+
+#enzo-link {
+    display: none;
+}
+
+.titulo {
+    display: none;
+}
+
+#boton-home {
+    display: none;
+}
+
+@media all and  (max-width: 600px)
+    {
+        #boton-home {
+            display: block;
+        }
+
+        #link-home
+        {
+            background-color: #0d1632;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid cadetblue;
+            border-radius: 5px;
+        }
+
+        #boton-home
+        {
+            margin-top: 35px;
+        }
+
+        #experience-list 
+        { 
+            margin-top: -62%;
+            width: 100%;
+            margin-left: -5%;
+            margin-bottom: 5%;
+            list-style: none; /* Elimina los bullets de la lista */
+            text-align: left; /* Alinea el texto al margen derecho */
+            font-size: 13px;
+
+        }
+
+        #softwares-list
+        { 
+            margin-top: -68%;
+            width: 100%;
+            margin-left: -5%;
+            margin-bottom: 5%;
+            list-style: circle;
+            text-align: left;
+            font-size: 14px;
+
+        }
+
+        #skills-list .titulo {
+            display: block;
+            font-size: 26px;
+        }
+        #experience-list .titulo {
+            display: block;
+            font-size: 26px;
+        }
+
+        #softwares-list .titulo {
+            display: block;
+            font-size: 26px;
+        }
+
+        #education-list .titulo {
+            display: block;
+            font-size: 26px;
+        }
+
+        #skills-list 
+        { 
+            margin-top: -67%;
+            width: 100%;
+            margin-bottom: 5%;
+            list-style: none;
+            margin-left: -5%;
+            font-size: 12.8px;
+            text-align: left;
+        }
+
+        #education-list 
+        { 
+            margin-top: -62%;
+            width: 100%;
+            margin-bottom: 5%;
+            list-style: none;
+            margin-left: -5%;
+            font-size: 13px;
+            text-align: left;
+        }
+
+    input:checked ~ nav {
+    display: block;
+    }
+
+    input:checked ~ label 
+    {
+        background: lightblue;
+        
+    }
+
+    
+
+    nav { 
+        text-align: center;       
+        margin: 0px;
+        display: none;
+        padding-bottom: 5.5%;
+
+    }
+
+    .navbar
+    { 
+        background-color: #0d1632;
+        border-top: #0d1632;
+        border-bottom: #0d1632;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0.5%;
+        margin-top: 0.5%;
+
+        ;
+    }
+
+label {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        box-sizing: border-box;
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: cadetblue;
+        }
+
+#experience-list li {
+    list-style: none; /* Elimina los bullets de la lista */
+  text-align: left; /* Alinea el texto al margen derecho */
+  }
+    }
