@@ -183,6 +183,7 @@ label {
     {
 
     #nombre{
+        display: block;
         color: #FFF;
         margin-top: -58px;
         margin-left: 50px;
