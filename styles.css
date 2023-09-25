@@ -175,8 +175,21 @@ label {
     display: none;
 }
 
+#nombre {
+    display: none;
+}
+
 @media all and  (max-width: 600px)
     {
+
+    #nombre{
+        color: #FFF;
+        margin-top: -58px;
+        margin-left: 50px;
+        font-size: 25px;
+        font-variant: all-small-caps;
+              }
+
         #boton-home {
             display: block;
         }
