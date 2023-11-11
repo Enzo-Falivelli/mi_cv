@@ -14,6 +14,7 @@
         }
     }
 
+
     function closeNav() /*Deselecciona el menu hamburguesa*/
     {
         document.getElementById('menu').checked = false;
@@ -38,6 +39,29 @@
         // Muestra la lista centrada
         centeredList.classList.remove('hidden');
     });
+
+ document.getElementById('experience-link').addEventListener('click', function(event) {
+        var centeredImage = document.getElementById('centered-image');
+        var centeredList = document.getElementById('experience-list');
+        clearLists();
+        closeNav();
+
+        if (window.innerWidth <= 768) 
+        {
+            // Si esta en mobile oculta la imagen
+            centeredImage.style.display = 'none';
+        }
+        else
+        {
+        // Mueve la imagen al margen izquierdo
+        centeredImage.style.marginLeft = '-70%';
+        }
+        // Muestra la lista centrada
+        centeredList.classList.remove('hidden');
+    });
+
+
+
 
     document.getElementById('skills-link').addEventListener('click', function(event) {    
         var centeredImage = document.getElementById('centered-image');
@@ -98,9 +122,33 @@
         centeredList.classList.remove('hidden');
     });
 
+//CENTRAR IMAGEN
+    document.getElementById('centered-image').addEventListener('click', function(event) {
+        clearLists();
+        closeNav();
+        var centeredImage = document.getElementById('centered-image');
+        if (window.innerWidth <= 768) 
+        {
+            //no haga nada
+        }
+        else
+        {
+        // Mueve la imagen al margen izquierdo
+        centeredImage.style.marginLeft = '0%';
+        }
+        // Muestra la lista centrada
+    });
 
-    
-
-
-
-
+    document.addEventListener("DOMContentLoaded", function() {
+        const parrafo = document.querySelector(".presentacion");
+        const botonLink = document.querySelector(".navbar");
+        const botonPerfil = document.querySelector(".perfil");
+      
+        botonLink.addEventListener("click", function() {
+          parrafo.classList.add("hidden");
+        });
+      
+        botonPerfil.addEventListener("click", function() {
+          parrafo.classList.remove("hidden");
+        });
+      });

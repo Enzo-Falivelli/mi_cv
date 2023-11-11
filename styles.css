@@ -9,7 +9,14 @@ body
     height: 100vh;
     font-family: Arial, sans-serif;
     }
-
+    .presentacion
+    {
+        margin-right:270px;
+        margin-left: 270px;
+        color: white; /* Establece el color de la fuente */
+        text-align: center; /* Centra el texto */
+    }
+    
 .navbar 
     { 
     font-size: 20px;
@@ -342,4 +349,15 @@ label
         user-select: none;
         background-color: cadetblue;
         }
-    }
+
+.presentacion
+{
+    margin-right: 30px;
+    margin-left: 30px;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+
+}
+
+}
