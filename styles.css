@@ -11,8 +11,8 @@ body
     }
     .presentacion
     {
-        margin-right:270px;
-        margin-left: 270px;
+        margin-right:600px;
+        margin-left: 600px;
         color: white; /* Establece el color de la fuente */
         text-align: center; /* Centra el texto */
     }
@@ -55,9 +55,9 @@ nav /*Estilo de Navs del header*/
 
 .perfil /*Estilo de la imagen*/
     {    
-    border-radius: 800px;
-    width: 250px; 
-    height: 250px; 
+    border-radius: 2000px;
+    width: 260px; 
+    height: 260px; 
     background-color: black; 
     padding: 1px; 
     margin-top: 55px;
@@ -76,7 +76,7 @@ nav /*Estilo de Navs del header*/
 #experience-list { 
     color: #FFF;
     position: absolute;
-    top: 55%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: left; /* Alinea el texto al margen derecho */
@@ -88,7 +88,7 @@ nav /*Estilo de Navs del header*/
 #skills-list {
     color: #FFF;
     position: absolute;
-    top: 60%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%); /*Animación de lista*/
     text-align: center;
@@ -99,7 +99,7 @@ nav /*Estilo de Navs del header*/
 #softwares-list {
     color: #FFF;
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: center;
@@ -110,7 +110,7 @@ nav /*Estilo de Navs del header*/
 #education-list {
     color: #FFF;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: left;
@@ -237,7 +237,7 @@ label
 
     #experience-list 
         { 
-        margin-top: -90px;
+        margin-top: -10px;
         width: 100%;
         margin-left: -5%;
         margin-bottom: 5%;
@@ -248,7 +248,7 @@ label
 
     #softwares-list
         { 
-        margin-top: -110px;
+        margin-top: -10px;
         width: 100%;
         margin-left: -5%;
         margin-bottom: 5%;
@@ -259,7 +259,7 @@ label
 
     #skills-list 
         { 
-        margin-top: -90px;
+        margin-top: -10px;
         width: 100%;
         margin-bottom: 5%;
         list-style: none;
@@ -270,7 +270,7 @@ label
 
     #education-list 
         { 
-        margin-top: -90px;
+        margin-top: -10px;
         width: 100%;
         margin-bottom: 5%;
         list-style: none;
@@ -352,8 +352,8 @@ label
 
 .presentacion
 {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
     color: white;
     text-align: center;
     font-size: smaller;
