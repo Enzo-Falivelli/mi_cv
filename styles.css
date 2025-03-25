@@ -11,8 +11,8 @@ body
     }
     .presentacion
     {
-        margin-right:600px;
-        margin-left: 600px;
+        margin-right:300px;
+        margin-left: 300px;
         color: white; /* Establece el color de la fuente */
         text-align: center; /* Centra el texto */
     }
@@ -76,7 +76,7 @@ nav /*Estilo de Navs del header*/
 #experience-list { 
     color: #FFF;
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: left; /* Alinea el texto al margen derecho */
@@ -88,7 +88,7 @@ nav /*Estilo de Navs del header*/
 #skills-list {
     color: #FFF;
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%); /*Animación de lista*/
     text-align: center;
@@ -99,7 +99,7 @@ nav /*Estilo de Navs del header*/
 #softwares-list {
     color: #FFF;
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: center;
@@ -110,7 +110,7 @@ nav /*Estilo de Navs del header*/
 #education-list {
     color: #FFF;
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%); /*Animación para lista*/
     text-align: left;
@@ -237,7 +237,7 @@ label
 
     #experience-list 
         { 
-        margin-top: -10px;
+        margin-top: -5px;
         width: 100%;
         margin-left: -5%;
         margin-bottom: 5%;
@@ -248,7 +248,7 @@ label
 
     #softwares-list
         { 
-        margin-top: -10px;
+        margin-top: -50px;
         width: 100%;
         margin-left: -5%;
         margin-bottom: 5%;
@@ -259,7 +259,7 @@ label
 
     #skills-list 
         { 
-        margin-top: -10px;
+        margin-top: -20px;
         width: 100%;
         margin-bottom: 5%;
         list-style: none;
@@ -270,7 +270,7 @@ label
 
     #education-list 
         { 
-        margin-top: -10px;
+        margin-top: -20px;
         width: 100%;
         margin-bottom: 5%;
         list-style: none;
